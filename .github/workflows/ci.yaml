@@ -96,7 +96,7 @@ jobs:
             let hasViolations = false;
             allResults.forEach(result => {
               if (result.violations.length > 0) {
-                console.log("File", result.file);
+                console.log(result.file);
                 console.log(result.violations);
                 hasViolations = true;
               }
