@@ -60,8 +60,9 @@ const currentWorkingDirectory = process.cwd();
   let hasViolations = false;
   allResults.forEach(result => {
     if (result.violations.length > 0) {
-      console.log(`\nFile: ${result.file}`);
+      console.log(result.file);
       console.log(result.violations);
+      console.log("end of the file",result.file)
       hasViolations = true;
     }
   });
