@@ -1,0 +1,138 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skip Link Styling */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* Header Styles */
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 1em 2em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav a:focus,
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    padding: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #0044cc;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+form {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1.1em;
+    margin: 0.5em 0 0.2em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:focus {
+    outline: none;
+    background-color: #0033a1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1em;
+}
+
+/* Accessibility - Focus Styles */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #ffbf00; /* High contrast focus indicator */
+    outline-offset: 2px;
+}
+

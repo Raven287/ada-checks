@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADA Compliant Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Skip to content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header section -->
+    <header role="banner">
+        <h1>Welcome to Our ADA Compliant Website</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#home" title="Go to home page">Home</a></li>
+                <li><a href="#about" title="Learn more about us">About Us</a></li>
+                <li><a href="#services" title="Explore our services">Services</a></li>
+                <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <section aria-labelledby="about">
+            <h2 id="about">About Our Company</h2>
+            <p>We are committed to creating accessible websites that everyone can use.</p>
+        </section>
+
+        <section aria-labelledby="services">
+            <h2 id="services">Our Services</h2>
+            <ul>
+                <li>Web Accessibility Audits</li>
+                <li>Accessibility Consulting</li>
+                <li>Training and Workshops</li>
+            </ul>
+        </section>
+
+        <img src="contact.jpg" width="400" height="300">
+        <section aria-labelledby="contact">
+            <h2 id="contact">Contact Us</h2>
+            <form action="#" method="post" aria-labelledby="contact-form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required aria-required="true" placeholder="Write your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 ADA Compliant Web Solutions</p>
+    </footer>
+
+</body>
+</html>

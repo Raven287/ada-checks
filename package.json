@@ -1,0 +1,23 @@
+{
+  "name": "ada-react-project",
+  "version": "1.0.0",
+  "description": "A simple project to demonstrate ADA issues and accessibility checks.",
+  "devDependencies": {
+    "axe-cli": "3.2.1",
+    "axe-core": "4.10.2",
+    "puppeteer": "24.2.0",
+    "serve": "14.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
